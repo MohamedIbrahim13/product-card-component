@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="stylesheet" href="./build/styles.css">
+</head>
+
+<body class="bg-[color:var(--bg-cream)] flex justify-center items-center">
+  <div
+    class="md:w-3/6 md:h-[52%] grid md:grid-cols-2 rounded-xl bg-white gap-0 sm:w-11/12 sm:grid-cols-1 sm:grid-rows-2 sm:h-5/6">
+    <div class="h-fit">
+      <picture>
+        <source media="(max-width:480px)" srcset="./images/image-product-mobile.jpg">
+
+        <img src="images/image-product-desktop.jpg" alt="Desktop Product Image">
+      </picture>
+    </div>
+    <div class="p-7 flex flex-col items-center h-fit">
+      <div class="tracking-[5.5px] uppercase text-xs self-start">Perfume</div>
+      <h1 class="font-bold font-['Fraunces'] text-[color:var(--veryDarkBlue)] text-4xl leading-9 md:my-4 my-2">Gabrielle
+        Essence
+        Eau De Parfum</h1>
+      <div class="md:my-6 my-2 text-[15px]">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.</div>
+      <h3 class="self-start my-5 font-bold text-3xl font-['Fraunces'] text-[color:var(--darkCyan)] tracking-wide">
+        $149.99<span class="inline-block line-through text-xs">$169.99</span></h3>
+      <button class="flex justify-center items-center py-3 bg-[color:var(--darkCyan)] text-white rounded-md w-full"><img
+          src="./images/icon-cart.svg" class="mr-2.5" alt="Cart Icon">Add to Cart</button>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
