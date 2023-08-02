@@ -13,10 +13,11 @@
 }
 
 body {
-  max-height: 100vh;
-  min-height: 100%;
-  height: 100vh;
   color: var(--darkGrayishBlue);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 picture{
